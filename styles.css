@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #00796b;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #00796b;
+}
+
+.habit-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.habit-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.habit-form input:focus {
+    border-color: #00796b;
+}
+
+.habit-form button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.habit-form button:hover {
+    background-color: #00695c;
+}
+
+#habit-list {
+    list-style-type: none;
+}
+
+.habit {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habit span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.habit button {
+    background-color: #0d0d0d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.habit button:hover {
+    background-color: #d32f2f;
+}
+
+.habit-days {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.habit-days button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 12px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.habit-days button.completed {
+    background-color: #00796b;
+    color: white;
+}
+
+.habit-days button.disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.habit-days button:hover:not(.disabled) {
+    background-color: #bbb;
+}
+
+.export-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.export-button:hover {
+    background-color: #00695c;
+}
