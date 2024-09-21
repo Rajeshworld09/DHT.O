@@ -4,7 +4,11 @@ The Daily Habit Tracker is a web application designed to help users track and im
 Key Features
 
 Add Habits: Users can create new habits to track.
+
 Delete Habits: Users can remove any habit they no longer wish to track.
+
 Track Progress: Users can mark their progress for each habit on a day-by-day basis.
+
 Streak Maintenance: The app tracks streaks based on consecutive days the habit is completed.
+
 Export Data: Users can export their habit tracking data in CSV format for personal records.
